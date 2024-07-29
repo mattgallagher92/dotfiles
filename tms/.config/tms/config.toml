@@ -1,0 +1,15 @@
+[[search_dirs]]
+path = "/home/matt/dev"
+depth = 10
+
+[[search_dirs]]
+path = "/home/matt/dev-cit"
+depth = 10
+
+[[search_dirs]]
+path = "/home/matt/.config/nvim"
+depth = 10
+
+[[search_dirs]]
+path = "/home/matt/dotfiles"
+depth = 10
