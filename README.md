@@ -10,3 +10,8 @@ Most config is managed using [GNU Stow](https://www.gnu.org/software/stow/). Onc
 
 Stow will create symlinks to the files and/or directories in the package directory from the same place relative to `~/`. For example, because the `./tmux/` directory contains `.tmux.conf`, `stow tmux` will result in a symlink from `~/.tmux.conf` to `~/dotfiles/tmux/.tmux.conf`. Similarly, `stow wezterm` will result in a symlink from `~/.config/wezterm/` to `~/dotfiles/wezterm/.config/wezterm/`.
 
+## Other directories
+
+While most directories at the root of this repo are stow packages, there are exceptions:
+
+- The `./gnome/` directory contains a gnome-dconf.ini file with some setting overrides that I like. Run `dconf load / < ~/dotfiles/gnome/gnome-dconf.ini` to overwrite the corresponding settings on your system. You may want to back up your dconf settings first: `dconf dump / > ~/.config/dconf/user.bak`.
