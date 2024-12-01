@@ -17,3 +17,7 @@ depth = 10
 [[search_dirs]]
 path = "/home/matt/obsidian/"
 depth = 10
+
+[[search_dirs]]
+path = "/home/matt/nixos-config/"
+depth = 10
