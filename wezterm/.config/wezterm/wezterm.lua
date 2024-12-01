@@ -10,4 +10,7 @@ config.font = wezterm.font({
 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 })
 
+-- Workaround for https://github.com/wez/wezterm/issues/5990.
+config.front_end = "WebGpu"
+
 return config
