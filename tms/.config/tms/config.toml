@@ -7,6 +7,10 @@ path = "/home/matt/dev-cit/"
 depth = 10
 
 [[search_dirs]]
+path = "/home/matt/dev-gtw/"
+depth = 10
+
+[[search_dirs]]
 path = "/home/matt/.config/nvim/"
 depth = 10
 
