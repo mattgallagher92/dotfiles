@@ -49,3 +49,8 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+
+# Disable JetBrainsMono ligatures
+# https://ghostty.org/docs/config/reference#font-feature
+# https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features
+font-feature = -calt
