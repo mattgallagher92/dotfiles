@@ -54,3 +54,5 @@ theme = dark:Catppuccin Frappe,light:Catppuccin Latte
 # https://ghostty.org/docs/config/reference#font-feature
 # https://github.com/JetBrains/JetBrainsMono/wiki/OpenType-features
 font-feature = -calt
+
+gtk-titlebar-hide-when-maximized = true
