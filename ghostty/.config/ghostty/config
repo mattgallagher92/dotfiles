@@ -49,6 +49,8 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+background-opacity = 0.75
+background-opacity-cells = true
 
 # Disable JetBrainsMono ligatures
 # https://ghostty.org/docs/config/reference#font-feature
