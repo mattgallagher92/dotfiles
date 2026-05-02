@@ -28,3 +28,7 @@ vim.api.nvim_create_autocmd('BufEnter', {
     vim.treesitter.start()
   end,
 })
+
+-- LSP
+vim.lsp.enable({ 'fsautocomplete' })
+vim.diagnostic.config({ virtual_text = true })
