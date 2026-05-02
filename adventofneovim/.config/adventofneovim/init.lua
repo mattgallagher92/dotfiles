@@ -2,6 +2,7 @@ print 'advent of neovim'
 
 require('config.lazy')
 
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4
@@ -15,5 +16,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('aon-highlight-yank', { clear = true }),
   callback = function()
     vim.highlight.on_yank()
+  end,
+})
+
+-- Tree-sitter
+vim.api.nvim_create_autocmd('BufEnter', {
+  pattern = { '*.fs' },
+  desc = 'Enable Tree-sitter in fsharp files',
+  group = vim.api.nvim_create_augroup('aon-fsharp', { clear = true }),
+  callback = function()
+    vim.treesitter.start()
   end,
 })
