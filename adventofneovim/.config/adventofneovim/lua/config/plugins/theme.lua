@@ -8,8 +8,7 @@ return {
       dark = "frappe",
     },
   },
-  config = function(_, opts)
-    require("catppuccin").setup(opts)
+  init = function()
     vim.cmd.colorscheme("catppuccin-nvim")
   end,
 }
