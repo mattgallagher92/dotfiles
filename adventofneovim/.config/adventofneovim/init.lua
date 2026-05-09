@@ -30,6 +30,7 @@ vim.api.nvim_create_autocmd('BufEnter', {
 })
 
 -- LSP
+-- Other LSP configs enabled via Mason LSP config. I want fine-grained control over fsautocomplete.
 vim.lsp.enable({ 'fsautocomplete' })
 -- fsautocomplete returns invalid data, which Neovim doesn't handle well, causing the editor to lock up.
 -- (See https://github.com/mattgallagher92/fsac-semantic-tokens-bug-repro). 
