@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Tree-sitter
 vim.api.nvim_create_autocmd('BufEnter', {
-  pattern = { '*.fs' },
+  pattern = { '*.fs', '*.fsx' },
   desc = 'Enable Tree-sitter in fsharp files',
   group = vim.api.nvim_create_augroup('aon-fsharp', { clear = true }),
   callback = function()
