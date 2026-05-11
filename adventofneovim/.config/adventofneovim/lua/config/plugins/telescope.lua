@@ -22,6 +22,7 @@ return {
   config = function(_, opts)
     require('telescope').setup(opts)
     require('telescope').load_extension('fzf')
+    require "config.telescope.multigrep".setup()
   end,
   keys = {
     { "<leader>sf", "<cmd>Telescope find_files<CR>" },
