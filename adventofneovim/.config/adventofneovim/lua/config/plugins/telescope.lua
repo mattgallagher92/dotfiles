@@ -19,6 +19,10 @@ return {
       },
     },
   },
+  config = function(_, opts)
+    require('telescope').setup(opts)
+    require('telescope').load_extension('fzf')
+  end,
   keys = {
     { "<leader>sf", "<cmd>Telescope find_files<CR>" },
     { "<leader>sh", "<cmd>Telescope help_tags<CR>" },
