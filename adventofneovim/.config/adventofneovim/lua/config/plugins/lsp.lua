@@ -22,5 +22,6 @@ return {
       },
     },
   },
-  opts = { ensure_installed = { 'lua_ls' } },
+  -- fsautocomplete managed separately
+  opts = { ensure_installed = { 'lua_ls', 'tsgo', 'eslint', 'roslyn_ls' } },
 }
