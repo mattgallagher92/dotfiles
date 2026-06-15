@@ -26,6 +26,3 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
-
--- TODO: long lines are cut off. Add key map for vim.diagnostic.open_float()
-vim.diagnostic.config({ virtual_text = true })
