@@ -1,14 +1,16 @@
 -- Inspired by https://www.youtube.com/watch?v=yI9R13h9IEE
 return {
-  -- Enables automatic installation of language serevers.
-  'mason-org/mason-lspconfig.nvim',
+  -- Enables automatic installation of any tool that can be managed by Mason.
+  'WhoIsSethDaniel/mason-tool-installer.nvim',
   dependencies = {
+    -- Enables automatic installation of language serevers. Using it means that we can use lspconfig names rather than mason names in ensure_installed.
+    'mason-org/mason-lspconfig.nvim',
     -- Defines configs for language servers.
     "neovim/nvim-lspconfig",
     {
       -- Enables installation of language servers from within Neovim.
       'mason-org/mason.nvim',
-      config = true,
+      opts = {}
     },
     {
       -- Configures lua_ls with information about settings available in Neovim.
@@ -23,5 +25,5 @@ return {
     },
   },
   -- fsautocomplete managed separately
-  opts = { ensure_installed = { 'lua_ls', 'tsgo', 'eslint', 'roslyn_ls' } },
+  opts = { ensure_installed = { 'lua_ls', 'stylua', 'tsgo', 'eslint', 'roslyn_ls' } },
 }
