@@ -11,8 +11,8 @@ E.g., if you have a checkout of https://github.com/ionide/tree-sitter-fsharp:
 ```sh
 cd fsharp
 tree-sitter build
-mv parser.so ~/.config/adventofneovim/parser/fsharp.so
-cp -r queries/ ~/.config/adventofneovim/queries/fsharp/
+mv parser.so ~/.config/nvim/parser/fsharp.so
+cp -r queries/ ~/.config/nvim/queries/fsharp/
 ```
 
 .so files are large, so are gitignored.
