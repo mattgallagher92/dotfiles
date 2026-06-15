@@ -10,6 +10,7 @@ vim.opt.relativenumber = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.shiftwidth = 4
+vim.opt.undofile = true
 
 vim.keymap.set('n', '<leader><leader>x', '<cmd>source %<CR>')
 vim.keymap.set('n', '<leader>x', ':.lua<CR>')
