@@ -1,6 +1,6 @@
-# Advent of Neovim config
+# Neovim config
 
-Config made by following along with TJ DeVries' [Advent of Neovim video series](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM). I've diverged in places.
+Config started by following along with TJ DeVries' [Advent of Neovim video series](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM) (highly recommended to better understand how to configure Neovim!) and heavily adapted to make it my own.
 
 ## Tree-sitter
 
