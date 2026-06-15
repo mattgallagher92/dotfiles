@@ -22,12 +22,11 @@ return {
   config = function(_, opts)
     require('telescope').setup(opts)
     require('telescope').load_extension('fzf')
-    require "config.telescope.multigrep".setup()
   end,
   keys = {
     { "<leader>sf", "<cmd>Telescope find_files<CR>" },
     { "<leader>sh", "<cmd>Telescope help_tags<CR>" },
-    { "<leader>sg", "<cmd>Telescope live_grep<CR>" },
     { "<leader>sb", "<cmd>Telescope buffers<CR>" },
+    { "<leader>sg", function() require('config.telescope.multigrep').live_multigrep() end },
   },
 }
