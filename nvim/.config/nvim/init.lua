@@ -19,6 +19,8 @@ vim.keymap.set("v", "<leader>x", ":lua<CR>")
 vim.keymap.set("n", "<M-n>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<M-p>", "<cmd>cprev<CR>")
 
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight after yanking text",
   group = vim.api.nvim_create_augroup("mattg-highlight-yank", { clear = true }),
