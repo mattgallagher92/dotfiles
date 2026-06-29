@@ -1,5 +1,3 @@
-print("Sourcing Matt's config")
-
 -- Must be set before loading plugins so that key maps use correct leader keys.
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
@@ -12,12 +10,14 @@ vim.opt.smartcase = true
 vim.opt.shiftwidth = 4
 vim.opt.undofile = true
 
-vim.keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<leader>x", ":.lua<CR>")
-vim.keymap.set("v", "<leader>x", ":lua<CR>")
+vim.keymap.set("n", "<leader>X", "<cmd>source %<CR>", { desc = "Source file (lua)" })
+vim.keymap.set("n", "<leader>x", ":.lua<CR>", { desc = "Source line (lua)" })
+vim.keymap.set("v", "<leader>x", ":lua<CR>", { desc = "Source line (lua)" })
 
-vim.keymap.set("n", "<M-n>", "<cmd>cnext<CR>")
-vim.keymap.set("n", "<M-p>", "<cmd>cprev<CR>")
+vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write file" })
+
+vim.keymap.set("n", "<M-n>", "<cmd>cnext<CR>", { desc = "Next quickfix item" })
+vim.keymap.set("n", "<M-p>", "<cmd>cprev<CR>", { desc = "Previous quickfix item" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -33,5 +33,3 @@ require("config.lazy")
 require("config.treesitter")
 require("config.lsp")
 require("config.terminal")
-
-print("Matt's config sourced")

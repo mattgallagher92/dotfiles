@@ -20,13 +20,19 @@ return {
     },
   },
   config = function(_, opts)
-    require('telescope').setup(opts)
-    require('telescope').load_extension('fzf')
+    require("telescope").setup(opts)
+    require("telescope").load_extension("fzf")
   end,
   keys = {
-    { "<leader>sf", "<cmd>Telescope find_files<CR>" },
-    { "<leader>sh", "<cmd>Telescope help_tags<CR>" },
-    { "<leader>sb", "<cmd>Telescope buffers<CR>" },
-    { "<leader>sg", function() require('config.telescope.multigrep').live_multigrep() end },
+    { "<leader>sf", "<cmd>Telescope find_files<CR>", { desc = "[S]earch [f]iles" } },
+    { "<leader>sh", "<cmd>Telescope help_tags<CR>", { desc = "[S]earch [h]elp" } },
+    { "<leader>sb", "<cmd>Telescope buffers<CR>", { desc = "[S]earch [b]uffers" } },
+    {
+      "<leader>sg",
+      function()
+        require("config.telescope.multigrep").live_multigrep()
+      end,
+      { desc = "[S]earch by [g]rep" },
+    },
   },
 }

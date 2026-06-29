@@ -30,4 +30,30 @@ return {
       },
     },
   },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      preset = "modern",
+      spec = {
+        { "<leader>d", group = "diagnostics" },
+        { "<leader>dn", group = "diagnostics: next" },
+        { "<leader>dp", group = "diagnostics: previous" },
+        { "<leader>g", group = "git" },
+        { "<leader>h", group = "hunk", mode = "nv" },
+        { "<leader>o", group = "obsidian", mode = "nv" },
+        { "<leader>s", group = "search" },
+        { "<leader>t", group = "terminal" },
+      },
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
 }
