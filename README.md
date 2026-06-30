@@ -15,3 +15,4 @@ Stow will create symlinks to the files and/or directories in the package directo
 While most directories at the root of this repo are stow packages, there are exceptions:
 
 - The `./gnome/` directory contains a gnome-dconf.ini file with some setting overrides that I like. Run `dconf load / < ~/dotfiles/gnome/gnome-dconf.ini` to overwrite the corresponding settings on your system. You may want to back up your dconf settings first: `dconf dump / > ~/.config/dconf/user.bak`.
+- The `./system/` directory contains bash scripts (which should be run as root) to create system configuration files.
