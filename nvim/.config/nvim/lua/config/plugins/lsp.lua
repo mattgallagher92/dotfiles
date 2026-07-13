@@ -4,7 +4,7 @@ return {
     -- Enables automatic installation of any tool that can be managed by Mason.
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     -- fsautocomplete managed separately
-    opts = { ensure_installed = { "lua_ls", "stylua", "tsgo", "eslint", "roslyn_ls" } },
+    opts = { ensure_installed = { "lua_ls", "stylua", "tsgo", "eslint_d", "roslyn_ls" } },
     dependencies = {
       -- Enables automatic installation of language serevers. Using it means that we can use lspconfig names rather than mason names in ensure_installed.
       "mason-org/mason-lspconfig.nvim",

@@ -4,6 +4,7 @@ return {
     formatters_by_ft = {
       fsharp = { "fantomas" },
       lua = { "stylua" },
+      typescript = { "eslint_d" },
     },
     format_on_save = {
       -- Long, but 500ms doesn't seem to be long enough for fantomas.
