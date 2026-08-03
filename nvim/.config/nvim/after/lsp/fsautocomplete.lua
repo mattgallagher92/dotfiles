@@ -1,7 +1,7 @@
 return {
-  filetypes = { 'fsharp' },
-  root_markers = { '*.slnx', '*.sln', '*.fsproj', '.git' },
-  cmd = { 'fsautocomplete' },
+  filetypes = { "fsharp" },
+  root_markers = { "*.slnx", "*.sln", "*.fsproj", ".git" },
+  cmd = { "fsautocomplete" },
   -- https://github.com/ionide/FsAutoComplete/blob/main/docs/communication-protocol.md#initialization-options
   init_options = {
     AutomaticWorkspaceInit = true,
@@ -17,7 +17,7 @@ return {
       RecordStubGeneration = true,
       RecordStubGenerationBody = 'failwith "Not Implemented"',
       InterfaceStubGeneration = true,
-      InterfaceStubGenerationObjectIdentifier = 'this',
+      InterfaceStubGenerationObjectIdentifier = "this",
       InterfaceStubGenerationMethodBody = 'failwith "Not Implemented"',
       UnusedOpensAnalyzer = true,
       UnusedDeclarationsAnalyzer = true,
@@ -25,7 +25,7 @@ return {
       SimplifyNameAnalyzer = false,
       ResolveNamespaces = true,
       EnableReferenceCodeLens = true,
-      dotNetRoot = '/usr/local/share/dotnet',
+      dotNetRoot = "/usr/local/share/dotnet",
     },
   },
 }
