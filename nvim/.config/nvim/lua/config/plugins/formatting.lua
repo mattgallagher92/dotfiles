@@ -1,6 +1,13 @@
 return {
   "stevearc/conform.nvim",
   opts = {
+    formatters = {
+      fantomas = {
+        -- Run fantomas as local dotnet tool.
+        command = "dotnet",
+        args = { "fantomas", "$FILENAME" },
+      },
+    },
     formatters_by_ft = {
       fsharp = { "fantomas" },
       lua = { "stylua" },
