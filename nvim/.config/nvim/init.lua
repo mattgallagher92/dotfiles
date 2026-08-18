@@ -9,6 +9,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.shiftwidth = 4
 vim.opt.undofile = true
+-- Always show the sign column to prevent 'jumping' when the it is added.
+vim.opt.signcolumn = "yes"
 
 vim.keymap.set("n", "<leader>X", "<cmd>source %<CR>", { desc = "Source file (lua)" })
 vim.keymap.set("n", "<leader>x", ":.lua<CR>", { desc = "Source line (lua)" })
