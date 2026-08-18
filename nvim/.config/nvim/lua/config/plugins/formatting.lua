@@ -13,10 +13,9 @@ return {
       lua = { "stylua" },
       typescript = { "eslint_d" },
     },
-    format_on_save = {
-      -- Long, but 500ms doesn't seem to be long enough for fantomas.
-      timeout_ms = 2000,
-      lsp_format = "fallback",
-    },
+    -- Format after save to give slow formatters time, without locking the UI (which format on save would do).
+    -- Not using lsp_format as a fallback, because it seemed to slow down performance even when a dedicated formatter
+    -- was present, for some reason 🤷
+    format_after_save = {},
   },
 }
