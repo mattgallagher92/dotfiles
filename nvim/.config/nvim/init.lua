@@ -16,7 +16,8 @@ vim.keymap.set("n", "<leader>X", "<cmd>source %<CR>", { desc = "Source file (lua
 vim.keymap.set("n", "<leader>x", ":.lua<CR>", { desc = "Source line (lua)" })
 vim.keymap.set("v", "<leader>x", ":lua<CR>", { desc = "Source line (lua)" })
 
-vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write file" })
+vim.keymap.set("n", "<leader>ww", ":w<CR>", { desc = "Write current buffer" })
+vim.keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "Write all buffers" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
