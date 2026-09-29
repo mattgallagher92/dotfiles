@@ -18,9 +18,6 @@ vim.keymap.set("v", "<leader>x", ":lua<CR>", { desc = "Source line (lua)" })
 
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write file" })
 
-vim.keymap.set("n", "<M-n>", "<cmd>cnext<CR>", { desc = "Next quickfix item" })
-vim.keymap.set("n", "<M-p>", "<cmd>cprev<CR>", { desc = "Previous quickfix item" })
-
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -31,6 +28,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+require("config.quickfix")
 require("config.lazy")
 require("config.treesitter")
 require("config.lsp")
