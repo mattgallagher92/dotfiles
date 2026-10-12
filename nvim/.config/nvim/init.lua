@@ -8,6 +8,8 @@ vim.opt.relativenumber = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.shiftwidth = 4
+-- Use shiftwidth value as softtabstop value
+vim.opt.softtabstop = -1
 vim.opt.undofile = true
 -- Always show the sign column to prevent 'jumping' when the it is added.
 vim.opt.signcolumn = "yes"
