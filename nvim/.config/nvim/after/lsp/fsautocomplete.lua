@@ -2,6 +2,10 @@ return {
   filetypes = { "fsharp" },
   root_markers = { "*.slnx", "*.sln", "*.fsproj", ".git" },
   cmd = { "fsautocomplete" },
+  cmd_env = {
+    DOTNET_ROLL_FORWARD = "LatestMajor",
+    DOTNET_ROLL_FORWARD_TO_PRERELEASE = 1,
+  },
   -- https://github.com/ionide/FsAutoComplete/blob/main/docs/communication-protocol.md#initialization-options
   init_options = {
     AutomaticWorkspaceInit = true,
