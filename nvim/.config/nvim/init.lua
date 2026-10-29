@@ -39,8 +39,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
-require("config.quickfix")
+-- Loads plugins
 require("config.lazy")
+
+require("config.quickfix")
 require("config.treesitter")
 require("config.lsp")
 require("config.terminal")
