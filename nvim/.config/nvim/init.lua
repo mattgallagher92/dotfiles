@@ -22,6 +22,8 @@ vim.opt.smartcase = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+vim.o.mouse = "a"
+
 vim.keymap.set("n", "<leader>X", "<cmd>source %<CR>", { desc = "Source file (lua)" })
 vim.keymap.set("n", "<leader>x", ":.lua<CR>", { desc = "Source line (lua)" })
 vim.keymap.set("v", "<leader>x", ":lua<CR>", { desc = "Source line (lua)" })
