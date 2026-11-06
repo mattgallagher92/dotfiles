@@ -31,6 +31,9 @@ vim.keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "Write all buffers" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
+-- Workaround for https://github.com/neovim/neovim/issues/41313
+vim.keymap.set("n", "<C-]>", vim.lsp.buf.definition)
+
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight after yanking text",
   group = vim.api.nvim_create_augroup("mattg-highlight-yank", { clear = true }),
